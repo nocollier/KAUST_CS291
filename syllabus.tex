@@ -1,0 +1,51 @@
+\documentclass[12 pt]{article}
+\usepackage[colorlinks=true]{hyperref}
+\title{CS291: Scientific Software Engineering}
+\author{Nathan Collier}
+\begin{document}
+\maketitle
+\paragraph{Prerequisites} Programming experience and familiarity with basic discrete and numerical algorithms.
+
+\paragraph{KAUST course description}
+
+Practical aspects of application development for high performance computing. Programming language choice; compilers; compiler usage. Build management using make and other tools. Library development and usage. Portability and the GNU auto-configure system. Correctness and performance debugging, performance analysis. Group development practices and version control. Use of third party libraries and software licensing.
+
+\paragraph{Alternative course description}
+
+The purpose of this class is to teach the principles of software development with particular emphasis in the development of scientific applications. Many computational scientists come from application areas and develop software as best they can, unaware of many practices which are common in computer science. We will learn scientific software development actively by learning to participate in a current project. We will discuss abstract data structures, programming language choice, portability, and performance. 
+
+\paragraph{Reference Material}
+
+\begin{itemize}
+\item Textbooks on software engineering \cite{Sommerville2011,Nanz2011}
+\item Opinions on the role of scientific software engineering in academia \cite{Todorov2012,Dirk2012}
+\item Thoughts on scientific software \cite{Katzgraber2010,Hannay2009,Smith2007}
+\end{itemize}
+
+\paragraph{Rough outline}
+
+Don’t reinvent the wheel:
+identify computational tools for your field
+what can or can’t they do, extend them, contribute
+if nothing exists, or what exists won’t work, then invent new
+
+Abstract data types: 
+notion of fusing data and functions which operate on data together
+library development (static code you don’t change, application code which can change a lot)
+Language selection: 
+“right tool for the job”
+python/matlab/fortran/c/c++
+depends on your application requirements, and who you want your users to be
+mixed language programming
+Performance analysis
+Find the bottlenecks--don’t optimize when it doesn’t matter
+Development
+Version control
+Unit tests
+Documentation
+Other software
+Build your software on top of others!
+Petsc, Tao, Slepc, Deal.II, Libmesh
+
+\bibliographystyle{plain} \bibliography{course}
+\end{document}
