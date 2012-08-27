@@ -4,7 +4,17 @@
 \title{CS291: Scientific Software Engineering}
 \author{Nathan Collier}
 \begin{document}
-\maketitle
+{\large 
+  \begin{flushleft}
+    CS291: Scientific Software Engineering
+
+    Nathan Collier
+    
+    Fall 2012
+    
+    \rule{\linewidth}{0.25mm}
+\end{flushleft}}
+
 \paragraph{Prerequisites} Programming experience and familiarity with basic discrete and numerical algorithms.
 
 \paragraph{KAUST course description}
@@ -23,21 +33,70 @@ The purpose of this class is to teach the principles of software
 development with particular emphasis in the development of scientific
 applications. Many computational scientists come from application
 areas and develop software as best they can, unaware of many practices
-which are common in computer science. We will learn scientific
-software development actively by learning to participate in a current
-project. We will discuss abstract data structures, programming
-language choice, portability, and performance.
+which are common in computer science. These practices are mostly
+learned `on the street' and infrequently taught in a formal class
+setting. We will learn scientific software development actively by
+learning to participate in a current project.
 
 \paragraph{Reference Material}
+
+There is no formal text for this class. There are a few texts
+available in the KAUST library on software engineering in general. I
+have also included some papers written about software in science.
 
 \begin{itemize}
 \item Textbooks on software engineering \cite{Sommerville2011,Nanz2011}
 \item Opinions on the role of scientific software engineering in academia \cite{Todorov2012,Dirk2012}
 \item Thoughts on scientific software \cite{Katzgraber2010,Hannay2009,Smith2007}
+\item Miscellaneous writings and tutorials \cite{make,Prentice1998,Gube2011,Spolsky2012}
 \end{itemize}
 
 \paragraph{Rough outline}
 
+The following is a list of topics which we will cover in varying
+amounts of depth and not necesarily in this order.
+\begin{itemize}
+\item Defining your problem: understanding the data and algorithm flow
+\item Choosing a programming language: right tool for the job
+\item Write the program: style and document as you go
+\item Keep your source pure: version control
+\item Keep your output pure: unit testing
+\item Brief overview of compilers and how to use them
+\item Make your life easier: makefiles
+\item Debugging (gdb/valgrind/compiler options)
+\item Making the code more efficient: profiling
+\item Running on clusters and other high performance issues
+\item Creating your own libraries
+\item Using other libraries
+\item Visualization tools
+\end{itemize}
 
-\bibliographystyle{plain} \bibliography{course}
+\paragraph{Grading}
+
+The course will be mostly based on projects. I do not want to give
+artificial practice assignments which are not useful to the
+student. Thus the projects are designed to be immediately beneficial
+to the student and/or the scientific community. Here I will give a few
+samples:
+\begin{itemize}
+\item Starting with some code that you either wrote or perhaps use,
+  cleanup the project by adding makefiles, compiler options, unit
+  tests, documentation. Improve the code by making sure it conforms to
+  a style. Check it thoroughly for memory problems. Profile the
+  original version of the code and see what could be done to increase
+  efficiency. Add version control to document your changes.
+\item Search for software projects in your field and write a summary
+  report which compares the projects. What languages are used? Is the
+  software commerical or open source? How well documented? For what
+  problem sizes is the code useful?
+\item Identify an open source scientific project and a feature which
+  you would like to add. Implement the feature, add documentation and
+  testing, and submit the patch to the maintainers of the project.
+\end{itemize}
+In addition to the projects, I will periodically assign readings for
+which I will give random quizzes. The final grade will be 80\%
+projects and 20\% quizzes.
+
+\clearpage
+\bibliographystyle{alpha} \bibliography{course}
 \end{document}
