@@ -3,24 +3,6 @@ CS 291: Scientific Software Engineering
 
 - - - - -
 
-Introduction (Katzgraber2010)
------------------------------
-
-* Define your problem
-* Choose a programming language
-* Write the program: style and document as you go
-* Keep your source pure: version control
-* Unit testing
-* Compilers
-* Makefiles
-* Debugging (gdb/valgrind/compiler options)
-* Profiling
-* Running on clusters
-* Using other libraries
-* Visualization
-
-- - - - -
-
 Defining the problem
 --------------------
 
@@ -128,6 +110,7 @@ Performance analysis and debugging
 ----------------------------------
 
 * How can I improve my code and find bottlenecks?
+* Is the speedup I gain worth the time spent invested in code analysis?
 * How do I know my code is good?
 
 - - - - -
@@ -168,30 +151,12 @@ used and how to get your data into them. We will look at:
 
 - - - - -
 
+Who are you?
+------------
 
-Aside: Making your MAC compute ready
+* What is your name/major/advisor?
+* What are your research interests?
+* What kind of programming experience do you have?
+
+Assignment: Read [Kat10] for Tuesday
 ------------------------------------
-
-* Instructions are sufficient but maybe not necessary
-* You will need administration access
-* Upgrade to at least Lion
-* Download Xcode, Preferences, Downloads, Command-line tools
-* Download compilers from http://hpc.sourceforge.net/
-* Download/compile/install mpich2
-
-- - - - -
-
-Aside: Wrapping legacy codes using python
------------------------------------------
-
-* Use f2py to call fortran/C code from within python
-
-
-- - - - -
-
-Aside: The role of software in science
---------------------------------------
-
-The ability to implement algorithms efficienctly is under-appreciated
-in academia. We will spend some time discussing this and reading
-current opinions.
