@@ -9,10 +9,5 @@ all : $(markdown_web) $(markdown_pres)
 %_pres.html : %.md
 	landslide -l no -x def_list $< -c -r -d $@
 
-web: overview.html
-	open overview.html
-pres: overview_pres.html
-	open overview_pres.html
-
 clean: 
 	rm -rf theme *.html *~
