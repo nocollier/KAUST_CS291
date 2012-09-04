@@ -43,8 +43,8 @@ idea how to rectify it.
 
 - - - - -
 
-Source Control HOWTO: by Erik Sink
-----------------------------------
+Source Control HOWTO
+--------------------
 
 ### Quote
 
@@ -60,8 +60,8 @@ with no training at all.
 
 - - - - -
 
-What do I get by using version control?
----------------------------------------
+Why use this?
+-------------
 
 * Backup and Restore. Files are saved as they are edited, and you can
   jump to any moment in time. Need that file as it was on Feb 23,
@@ -74,18 +74,14 @@ What do I get by using version control?
 * Long-term undo. Sometimes we mess up bad. Suppose you made a change
   a year ago, and it had a bug. Jump back to the old version, and see
   what change was made that day.
-* Track Changes. As files are updated, you can leave messages
+* Track Changes. As files are updated, you leave messages
   explaining why the change happened. This makes it easy to see how a
-  file is evolving over time, and why.
+  file is evolving over time.
 * Track Blame/Ownership. All changes come with a tag including who
   made the change. This is great for assigning blame...er... credit.
 * Sandboxing, or insurance against yourself. Making a change? You can
   make temporary changes in an isolated area, test and work out the
   kinks before `checking in' your changes.
-* Branching and merging. A larger sandbox. You can branch a copy of
-  your code into a separate area and modify it in isolation (tracking
-  changes separately). Later, you can merge your work back into the
-  common area.
 
 - - - - - 
 
@@ -106,7 +102,7 @@ Best Practices
 
 - - - - -
 
-What do checkin/commit?
+What to checkin/commit?
 -----
 
 Although you can store anything you want in a repository, that doesn't
@@ -168,3 +164,11 @@ wise to let the distance between your working folder and the
 repository grow too large.
 
 - - - - -
+
+Host your repositories online
+-----------------------------
+
+* bitbucket.org - great account status for academics
+* github.com - free but your code is opensource
+* googlecode.com - also free but your code is opensource
+
