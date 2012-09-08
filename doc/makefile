@@ -2,7 +2,9 @@ markdown_srcs := $(wildcard *.md)
 markdown_web   = $(markdown_srcs:.md=.html)
 markdown_pres  = $(markdown_srcs:.md=_pres.html)
 
-all : $(markdown_web) $(markdown_pres)
+pres: $(markdown_pres)
+
+all : $(markdown_pres) $(markdown_web) 
 
 %.html : %.md
 	markdown -x def_list -x codehilite -f $@ $<
