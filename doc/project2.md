@@ -20,7 +20,7 @@ scripted languages, in this project I want to test your ability to
 compile projects. If you do not have such a code project, check out
 the course repository for examples which you can use.
 
-### Due date: 
+### Due date: 9 October 2012, in my email inbox by 11:59pm 
 
 - - - - -
 
